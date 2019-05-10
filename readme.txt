@@ -1,7 +1,15 @@
-# JDM Native Lazy Loading
+=== JDM Native Lazy Loading ===
+Contributors: jdmdigital
+Tags: lazy loading, img attribute
+Requires at least: 4.5
+Tested up to: 5.2
+Stable tag: 1.0
+License: GPLv2
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+
 Adds the loading="lazy" attribute to IMG tags within your content to support native image lazy loading, coming in Chrome 75.
 
-## Description
+== Description ==
 This plugin adds the ***loading="lazy"*** attribute to IMG tags within your content to support native image lazy loading, coming in Chrome 75.
 
 For more information about native lazy loading images, check out this article: https://addyosmani.com/blog/lazy-loading/
@@ -14,15 +22,15 @@ Just install, activate, and marvel at its simplicity.
 
 There are no added CSS.  There is no JS included in the plugin.  It just works in browsers that support the new `loading` image attribute.
 
-## Frequently Asked Questions
-**Does this add any JS?**
+== Frequently Asked Questions ==
+= Does this add any JS? =
 Nope.  If you're using another JS-based lazy loader, that'll just keep working as it did.  If the browser doesn't support the `loading` attribute, it'll just ignore it and process per usual.
 
-**Where is the Settings Page?**
+= Where is the Settings Page? =
 There isn't one.  It just adds a plugable function which filters the content and replaces `<img` with `<img loading="lazy"`.  Simple.
 
 
-## Changelog
+== Changelog ==
 
-**1.0**
+= 1.0 =
 * First release.
