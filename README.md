@@ -1,8 +1,8 @@
 # JDM Native Lazy Loading
-Adds the loading="lazy" attribute to IMG tags within your content to support native image lazy loading, coming in Chrome 75.
+WordPress plugin automatically adds the `loading="lazy"` attribute to IMG tags within your content to support native image lazy loading, coming in Chrome 75.
 
 ## Description
-This plugin adds the ***loading="lazy"*** attribute to IMG tags within your content to support native image lazy loading, coming in Chrome 75.
+This plugin adds the `loading="lazy"` attribute to IMG tags found when filtering `the_content()` to support native image lazy loading (coming in Chrome 75).
 
 For more information about native lazy loading images, check out this article: https://addyosmani.com/blog/lazy-loading/
 
@@ -16,9 +16,11 @@ There are no added CSS.  There is no JS included in the plugin.  It just works i
 
 ## Frequently Asked Questions
 **Does this add any JS?**
+
 Nope.  If you're using another JS-based lazy loader, that'll just keep working as it did.  If the browser doesn't support the `loading` attribute, it'll just ignore it and process per usual.
 
 **Where is the Settings Page?**
+
 There isn't one.  It just adds a plugable function which filters the content and replaces `<img` with `<img loading="lazy"`.  Simple.
 
 
