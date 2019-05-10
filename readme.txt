@@ -4,8 +4,7 @@ Tags: lazy loading, img attribute
 Requires at least: 4.5
 Tested up to: 5.2
 Stable tag: 1.0
-License: GPLv2
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
+License: MIT
 
 Adds the loading="lazy" attribute to IMG tags within your content to support native image lazy loading, coming in Chrome 75.
 
