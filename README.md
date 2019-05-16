@@ -5,7 +5,7 @@ WordPress plugin automatically adds the `loading="lazy"` attribute to IMG tags w
 ## Description
 This plugin adds the `loading="lazy"` attribute to IMG tags found when filtering `the_content()` to support native image lazy loading (coming in Chrome 75).
 
-For more information about native lazy loading images, check out this article: https://addyosmani.com/blog/lazy-loading/
+For more information about native lazy loading images, check out this article: https://addyosmani.com/blog/lazy-loading/ and for a little more depth into what we're doing here, check out our explainer post at: https://jdmdig.it/30nXp7h
 
 Historically, to limit the impact offscreen images have on page load times, developers have needed to use a JavaScript library (like *LazySizes*) in order to defer fetching these images until a user scrolls near them.  What if the browser could avoid loading these offscreen images for you? 
 
