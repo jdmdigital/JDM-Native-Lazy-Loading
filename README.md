@@ -18,7 +18,7 @@ There are no added CSS.  There is no JS included in the plugin.  It just works i
 ## Settings
 The plugin should work ideally right out of the box, but you *can* go to the new settings page at **Settings** >> **Native Lazy Loading** if you want a little more control.  Here, you can choose what the `loading` attribute should be, both for the first image within the content and the rest of the images below that.
 
-![Native Lazy Loading Images Plugin Screenshot](https://github.com/jdmdigital/JDM-Native-Lazy-Loading/blob/master/screenshot-1.jpg)
+![Native Lazy Loading Images Plugin Screenshot](https://github.com/jdmdigital/JDM-Native-Lazy-Loading/blob/master/screenshot-1.JPG)
 
 ## Frequently Asked Questions
 **Does this add any JS?**
