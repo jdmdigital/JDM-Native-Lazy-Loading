@@ -27,7 +27,7 @@ Nope.  If you're using another JS-based lazy loader, that'll just keep working a
 
 **Where is the Settings Page?**
 
-There isn't one.  It just adds a plugable function which filters the content and replaces `<img` with `<img loading="lazy"`.  Simple.
+In version 1.0 there wan't one, but thanks to a little suggestion by @verlok, there IS one in v1.1.  You'll find it at **Settings** >> **Native Lazy Loading**. 
 
 
 ## Changelog
