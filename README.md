@@ -32,5 +32,9 @@ In version 1.0 there wan't one, but thanks to a little suggestion by @verlok, th
 
 ## Changelog
 
+**1.1**
+* Added Settings Page
+* Added Option to select the `loading=""` attribute
+
 **1.0**
 * First release.
