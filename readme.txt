@@ -8,11 +8,11 @@ Stable tag: 1.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Automatically add the new `loading` attribute to images within your content to support native image lazy loading.
+Automatically add the new `loading` attribute to images within your content to support native image lazy loading in browsers that support it.
 
 == Description ==
 
-This plugin adds the `loading` attribute to IMG tags found when filtering `the_content()` to support native image lazy loading.
+This plugin adds the `loading` attribute to IMG tags found when filtering `the_content()` to support native image lazy loading in browsers that support it.
 
 For more information about lazy loading images using this new native browser image attribute, check out this article: [https://addyosmani.com/blog/lazy-loading/](https://addyosmani.com/blog/lazy-loading/) and for a little more depth into what we're doing here, check out our [explainer post](https://jdmdig.it/30nXp7h).
 
@@ -52,6 +52,9 @@ In version 1.0 there wan't one, but thanks to a suggestion by [@verlok](https://
 * Added Uninstall Script for housekeeping 
 * Added Support for the (unofficial) DISABLE_NAG_NOTICES constant
 * Spelling Corrections (Oops)
+* Fixed Default Settings
+* Added Debug Mode (for dev)
+* Bug Fixes
 
 = 1.1 =
 * Added Settings Page

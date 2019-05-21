@@ -15,6 +15,7 @@ if ( ! defined( 'WPINC' ) ) {
 
 define( 'NATIVELAZYLOADING_PLUGIN_PATH', plugin_dir_path( __FILE__ ) );
 define( 'NATIVELAZYLOADING_PLUGIN_URL', plugin_dir_url( __FILE__ ) );
+define( 'NATIVELAZYLOADING_DEBUG', false );
 
 /* == Build Settings Page and Declare Options == 
  * @since v1.1
@@ -61,14 +62,17 @@ add_action( 'admin_init', 'jdm_check_activation_date' );
 // @since v1.2
 function jdmnll_review_notice() {
 	$reviewurl 			= 'https://wordpress.org/plugins/native-image-lazy-loading/#reviews';
-	$dismissforeverurl 	= get_admin_url() . '?jdmnllnobug=1';
+	$dismissforeverurl 	= '?jdmnllnobug=1';
 
 	$notice = '
 	<div class="notice notice-info"> 
 		<p>If our little plugin is working great for you, do us a big favor and <a href="'.$reviewurl.'" target="_blank" rel="noopener nofollow" style="font-weight:600">rate us on WordPress.org</a> or don\'t. Your choice. <a href="'.$dismissforeverurl.'">Dismiss Forever</a></p>
 	</div>';
-
-	echo $notice;
+	
+	if( is_admin() && get_option( 'jdmnll_no_bug') && !defined('DISABLE_NAG_NOTICES') ){
+		echo $notice;
+	}
+	
 }
 
 /**
@@ -109,8 +113,9 @@ if(!function_exists('jdm_native_lazy_loading')) {
 	add_filter('the_content','jdm_native_lazy_loading');
 	
 	function jdm_native_lazy_loading($content) {
-		$firstImg = esc_attr(get_option('jdmnll_1stimg'));
-		$nthimg = esc_attr(get_option('jdmnll_nthimg'));
+		$default_value = 'lazy';
+		$firstImg = esc_attr(get_option('jdmnll_1stimg', $default_value));
+		$nthimg = esc_attr(get_option('jdmnll_nthimg', $default_value));
 		
 		if($firstImg == $nthimg) {
 			// Replace all matches with the loading setting
@@ -123,6 +128,32 @@ if(!function_exists('jdm_native_lazy_loading')) {
 		}
 		
 		return $content;
+	}
+	
+}
+
+function jdmnll_debug() {
+	if(defined('NATIVELAZYLOADING_DEBUG') && NATIVELAZYLOADING_DEBUG) {
+		if(get_option( 'jdmnll_no_bug')){
+			$nobuggy = 'TRUE';
+		} else {
+			$nobuggy = 'FALSE';
+		}
+		$default_value = 'lazy';
+		$firstImg = esc_attr(get_option('jdmnll_1stimg', $default_value));
+		$nthimg = esc_attr(get_option('jdmnll_nthimg', $default_value));
+
+		$html = '
+		<pre>
+			Activation Date: '.get_option( 'jdmnll_activation_date' ).'<br/>
+			Past Date: '.strtotime( '-8 days' ).'<br/>
+			Never Bug: '.$nobuggy.'<br/>
+			First Img: '.$firstImg.'<br/>
+			Nth Img: '.$nthimg.'<br/>
+		</pre>
+		';
+
+		echo $html;
 	}
 	
 }

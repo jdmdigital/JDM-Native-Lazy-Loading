@@ -32,11 +32,14 @@ In version 1.0 there wan't one, but thanks to a suggestion by [@verlok](https://
 
 ## Changelog
 
-**1.2**
+** 1.2 **
 * Added Admin Notice (details on [GitHub repo](https://github.com/jdmdigital/JDM-Native-Lazy-Loading/issues/6))
 * Added Uninstall Script for housekeeping 
 * Added Support for the (unofficial) DISABLE_NAG_NOTICES constant
 * Spelling Corrections (Oops)
+* Fixed Default Settings
+* Added Debug Mode (for dev)
+* Bug Fixes
 
 **1.1**
 * Added Settings Page
