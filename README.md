@@ -27,10 +27,16 @@ Nope.  If you're using another JS-based lazy loader, that'll just keep working a
 
 **Where is the Settings Page?**
 
-In version 1.0 there wan't one, but thanks to a little suggestion by @verlok, there IS one in v1.1.  You'll find it at **Settings** >> **Native Lazy Loading**. 
+In version 1.0 there wan't one, but thanks to a suggestion by [@verlok](https://github.com/verlok), there IS one since v1.1.  You'll find it at **Settings** >> **Native Lazy Loading**.  
 
 
 ## Changelog
+
+** 1.2 **
+* Added Admin Notice (details on [GitHub repo](https://github.com/jdmdigital/JDM-Native-Lazy-Loading/issues/6))
+* Added Uninstall Script for housekeeping 
+* Added Support for the (unofficial) DISABLE_NAG_NOTICES constant
+* Spelling Corrections (Oops)
 
 **1.1**
 * Added Settings Page
