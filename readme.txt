@@ -39,7 +39,7 @@ For browsers that don't support this new image loading attribute, that's ok.  Yo
 Nope.  If you're using another JS-based lazy loader, that'll just keep working as it did.  If the browser doesn't support the `loading` attribute, it'll just ignore it and process per usual.
 
 = Where is the Settings Page? =
-In version 1.0 there wan't one, but thanks to a suggestion by [@verlok](https://github.com/verlok), there IS one now.  You'll find it at **Settings** >> **Native Lazy Loading**. 
+In version 1.0 there wasn't one, but thanks to a suggestion by [@verlok](https://github.com/verlok), there IS one now.  You'll find it at **Settings** >> **Native Lazy Loading**. 
 
 == Screenshots ==
 
