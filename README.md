@@ -9,11 +9,11 @@ For more information about native lazy loading images, check out this article: h
 
 Historically, to limit the impact offscreen images have on page load times, developers have needed to use a JavaScript library (like *LazySizes*) in order to defer fetching these images until a user scrolls near them.  What if the browser could avoid loading these offscreen images for you? 
 
-The `loading` attribute allows a browser to defer loading offscreen images and iframes until users scroll near them. It comes in three flavors, but this plugin simply adds the attribute `loading="lazy"` to all images sent through `the_content()`.  
+The `loading` attribute allows a browser to defer loading offscreen images and iframes until users scroll near them. It comes in three flavors which you can select (the first one and the Nth ones) to all images sent through `the_content()`.  
 
-Just install, activate, and marvel at its simplicity.  
+Just install, activate, check the settings page, and marvel at its simplicity.  
 
-There are no added CSS.  There is no JS included in the plugin.  It just works in browsers that support the new `loading` image attribute.
+There are no added CSS.  There is no JS included in the plugin.  There's no advertising at all.  It just works in browsers that support the new `loading` image attribute.
 
 ## Settings
 The plugin should work ideally right out of the box, but you *can* go to the new settings page at **Settings** >> **Native Lazy Loading** if you want a little more control.  Here, you can choose what the `loading` attribute should be, both for the first image within the content and the rest of the images below that.
@@ -27,7 +27,7 @@ Nope.  If you're using another JS-based lazy loader, that'll just keep working a
 
 **Where is the Settings Page?**
 
-In version 1.0 there wan't one, but thanks to a suggestion by [@verlok](https://github.com/verlok), there IS one since v1.1.  You'll find it at **Settings** >> **Native Lazy Loading**.  
+In version 1.0 there wasn't one, but thanks to a suggestion by [@verlok](https://github.com/verlok), there IS one since v1.1.  You'll find it at **Settings** >> **Native Lazy Loading**.  
 
 
 ## Changelog
